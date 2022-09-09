@@ -1,0 +1,16 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #efefef;
+    /* color: #1f1f1f; */
+    color: rgba(18, 16, 17, .9);
+}
+
+p {
+    /* color: rgba(41, 34, 38, 0.7); */
+    color: #1f1f1f;
+    color:hsl(0, 1%, 11%) ;
+}
+
+/* https://coolors.co/ */

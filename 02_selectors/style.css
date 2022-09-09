@@ -1,0 +1,38 @@
+body {
+    font-size: 22px;
+    background-color: #efefef;
+    border: 3px solid #0f0f0f;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+main {
+    font-family: monospace;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}
+
+
+/* specificity calculator */
+/* https://specificity.keegan.st/ */
