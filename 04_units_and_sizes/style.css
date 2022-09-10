@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    /* width: 100vw; */
+    /* width: 100%; */
+    min-height: 100vh;
+}
+
+header {
+    width: 50%;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 100%;
+    font-size: 3rem;
+    padding: .5em;
+}
+
+main {
+    /* width: 50vw;
+    background-color: lightblue; */
+    font-size: 2rem;
+}
+
+p {
+    /* font-size: large; */
+    font-size: 1.5rem;
+    width: 50ch;
+}
