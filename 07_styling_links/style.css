@@ -1,0 +1,24 @@
+body {
+    padding: 5%;
+    font-size: 2rem;
+    background-color: #efefef;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:active {
+    color:red;
+}

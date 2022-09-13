@@ -1,0 +1,23 @@
+/* Typography is the way that text is arranged and presented */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    background-color: #efefef;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    /* text-decoration: underline; */
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.3;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    /* font-weight: bold; */
+    font-style: oblique;
+}
