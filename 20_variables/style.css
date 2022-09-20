@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* font */
+    --ff: 'Nunito', sans-serif;
+    --fs: 1.5rem;
+    --fs-xl: 3rem;
+
+    /* colors */
+    --bgcolor: #475569;
+    --alt-bgcolor: #1e293b;
+    --radial-color: whitesmoke;
+    --light-color: whitesmoke;
+    --dark-color: #000;
+
+    /* square */
+    --square-bgcolor: papayawhip;
+    --square-size: max(150px, 20vw);
+
+    /* padding */
+    --padding-sm: 0.5rem;
+    --padding-md: 1rem;
+    --padding-lg: 1.5rem;
+    --padding-xl: 2.5rem;
+
+    /* border */
+    --border: 2px solid var(--dark-color);
+
+    /* shadows */
+    --shadow:  0 7px 5px -5px var(--dark-color);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bgcolor: #000;
+        --alt-bgcolor: #333;
+        --radial-color: rgb(217, 217, 217);
+        --square-bgcolor: rgb(202, 174, 202);
+    }
+}
+
+/* || GENERAL STYLES */
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  min-height: 100vh;
+
+  background-color: var(--bgcolor);
+  background-image: radial-gradient(var(--radial-color), var(--bgcolor));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: var(--alt-bgcolor);
+  color: var(--light-color);
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: var(--padding-md);
+  border-bottom: var(--border);
+  box-shadow: var(--shadow);
+}
+
+main {
+  flex-grow: 1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: min(4vw, 15px);
+}
+
+footer {
+  bottom: 0;
+}
+
+
+/* || FEATURES */
+
+.square--highlight {
+   --square-bgcolor: cornflowerblue;
+}
+
+.square {
+    background-color: var(--square-bgcolor);
+    width: var(--square-size);
+    height: var(--square-size);
+    border: var(--border);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: var(--fs-xl);
+    box-shadow: var(--shadow);
+}
